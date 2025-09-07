@@ -1,44 +1,31 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import { ComponentPropsWithoutRef } from "react";
 
 interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
-  /**
-   * Optional CSS class name to apply custom styles
-   */
   className?: string;
-  /**
-   * Whether to reverse the animation direction
-   * @default false
-   */
   reverse?: boolean;
-  /**
-   * Whether to pause the animation on hover
-   * @default false
-   */
   pauseOnHover?: boolean;
-  /**
-   * Content to be displayed in the marquee
-   */
-  children: React.ReactNode;
-  /**
-   * Whether to animate vertically instead of horizontally
-   * @default false
-   */
   vertical?: boolean;
-  /**
-   * Number of times to repeat the content
-   * @default 4
-   */
   repeat?: number;
+  /**
+   * Data items (text / image)
+   */
+  items: { image?: string; text?: string }[];
+  /**
+   * Render mode
+   */
+  variant?: "image" | "text" | "mixed";
 }
 
 export function Marquee({
   className,
   reverse = false,
   pauseOnHover = false,
-  children,
   vertical = false,
   repeat = 4,
+  items,
+  variant = "mixed",
   ...props
 }: MarqueeProps) {
   return (
@@ -50,7 +37,7 @@ export function Marquee({
           "flex-row": !vertical,
           "flex-col": vertical,
         },
-        className,
+        className
       )}
     >
       {Array(repeat)
@@ -65,7 +52,27 @@ export function Marquee({
               "[animation-direction:reverse]": reverse,
             })}
           >
-            {children}
+            {items.map((item, idx) => (
+              <div
+                key={idx}
+                className="px-4 py-2 mx-2 rounded-lg bg-black/30 hover:bg-black/40 transition-all"
+              >
+                {variant !== "text" && item.image && (
+                  <Image
+                    src={item.image}
+                    alt={item.text || `marquee-${idx}`}
+                    width={200}
+                    height={200}
+                    className="rounded-md object-contain"
+                  />
+                )}
+                {variant !== "image" && item.text && (
+                  <span className="text-sm font-medium text-white bg-clip-text text-transparent">
+                    {item.text}
+                  </span>
+                )}
+              </div>
+            ))}
           </div>
         ))}
     </div>
