@@ -3,8 +3,8 @@
 import React from "react";
 import { Marquee } from "@/components/magicui/marquee";
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
-import { FaHireAHelper } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { FaHireAHelper } from "react-icons/fa";
 
 const projects = [
   { image: "/Delvfox.webp" },
