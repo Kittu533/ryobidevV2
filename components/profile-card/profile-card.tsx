@@ -6,12 +6,12 @@ import BubbleProfile from "./bubble-profile";
 import {
   FaCalendar,
   FaCoffee,
-  FaReact,
   FaPooStorm,
 } from "react-icons/fa";
 import { FaGithub, FaLocationPin } from "react-icons/fa6";
 import { InteractiveHoverButton } from "../magicui/interactive-hover-button";
 import { RiSpeakFill } from "react-icons/ri";
+import { PiStudentFill } from "react-icons/pi";
 
 interface ProfileCardProps {
   name: string;
@@ -24,7 +24,7 @@ export default function ProfileCard({ name, title }: ProfileCardProps) {
       {/* HEADER */}
       <div className="grid grid-cols-[72px_1fr] md:grid-cols-[96px_1fr] gap-3 md:gap-4 items-center min-h-[96px] md:min-h-[112px]">
         <Image
-          src="/avatar.webp"
+          src="/profile-picture.webp"
           alt="Profile Picture"
           width={96}
           height={96}
@@ -52,7 +52,7 @@ export default function ProfileCard({ name, title }: ProfileCardProps) {
             <BubbleProfile label="Coffee Addict" icon={<FaCoffee />} />
           </div>
           <div className="flex flex-wrap gap-2">
-            <BubbleProfile label="Frontend Developer" icon={<FaReact />} />
+            <BubbleProfile label="Universitas Teknologi Yogyakarta" icon={<PiStudentFill />} />
             <BubbleProfile label="22 y/o" icon={<FaCalendar />} />
           </div>
         </div>

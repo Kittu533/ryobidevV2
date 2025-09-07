@@ -40,7 +40,9 @@ export default function ProjectCard({
       {/* Header */}
       <div className="flex flex-col sm:flex-col items-start sm:items-start w-full mb-4 gap-4 p-2">
         <div className="flex gap-2 justify-center items-center text-2xl sm:text-3xl">
-          {icon}
+          <span className="drop-shadow-[0_0_16px_#e96604]">
+            {icon}
+          </span>
           <h3 className="text-2xl font-extrabold leading-tight">{title}</h3>
         </div>
         <p className="text-gray-500 text-sm sm:text-base break-words">
