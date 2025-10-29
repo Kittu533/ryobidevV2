@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import BubbleProfile from "./bubble-profile";
 import {
   FaCalendar,
@@ -60,18 +61,22 @@ export default function ProfileCard({ name, title }: ProfileCardProps) {
 
       {/* CTA BUTTONS */}
       <div className="mt-4 grid grid-cols-2 sm:grid-cols-2 gap-3">
-        <InteractiveHoverButton
-          icon={<FaPooStorm />}
-          className="h-10 md:h-12 w-full font-semibold text-md md:text-xl"
-        >
-          Hire Me
-        </InteractiveHoverButton>
-        <InteractiveHoverButton
-          icon={<FaGithub />}
-          className="h-10 md:h-12 w-full bg-orange-600 text-black font-semibold text-md md:text-xl hover:text-white"
-        >
-          Github
-        </InteractiveHoverButton>
+        <Link href="mailto:robiatmaja7@gmail.com" className="w-full">
+          <InteractiveHoverButton
+            icon={<FaPooStorm />}
+            className="h-10 md:h-12 w-full font-semibold text-md md:text-xl"
+          >
+            Hire Me
+          </InteractiveHoverButton>
+        </Link>
+        <Link href="https://github.com/Kittu533" target="_blank" rel="noopener noreferrer" className="w-full">
+          <InteractiveHoverButton
+            icon={<FaGithub />}
+            className="h-10 md:h-12 w-full bg-orange-600 text-black font-semibold text-md md:text-xl hover:text-white"
+          >
+            Github
+          </InteractiveHoverButton>
+        </Link>
       </div>
     </div>
   );

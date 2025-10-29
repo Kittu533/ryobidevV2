@@ -52,6 +52,13 @@ export default function WorkExperience({ className }: WorkExperienceProps) {
       period: "Feb 2025 - Present",
       description: "Frontend development for company projects.",
     },
+     {
+      icon: <FaReact />,
+      position: "Internship Frontend Developer",
+      company: "USH UTY X GMEDIA",
+      period: "Sep 2025 - Present",
+      description: "Frontend development for company projects.",
+    },
     {
       icon: <FaLaptopCode />,
       position: "Web Developer",

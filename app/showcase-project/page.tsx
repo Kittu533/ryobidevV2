@@ -16,6 +16,7 @@ import {
   SiFirebase,
   SiFastapi,
   SiFlutter,
+  SiPhp,
 } from "react-icons/si";
 
 export default function ShowcaseProject() {
@@ -24,8 +25,8 @@ export default function ShowcaseProject() {
       title: "Jobprep",
       description:
         "Jobprep is a platform designed to help users prepare for job interviews by providing a wide range of resources and tools.",
-      image: "/jobprep-project.webp",
-      isFeatured: true,
+      image: "/jobprep.webp",
+      isFeatured: false,
       techStack: [
         { icon: <SiNuxtdotjs className="text-white" />, name: "Nuxt" },
         {
@@ -36,27 +37,88 @@ export default function ShowcaseProject() {
           icon: <SiTypescript className="text-yellow-400" />,
           name: "Typescript",
         },
-        { icon: <SiFirebase className="text-blue-500" />, name: "Firebase" },
         { icon: <SiFastapi className="text-blue-500" />, name: "FastAPI" },
-
       ],
-      links: [
-      { label: "Live Demo", url: "https://jobprep-six.vercel.app/" },
-    ],
+      links: [{ label: "Live Demo", url: "https://jobprep-six.vercel.app/" }],
     },
-     {
+    {
       title: "Jogfarm",
       description:
-        "Jogfarm is a platform designed to help users prepare for job interviews by providing a wide range of resources and tools.",
+        "Jogfarm is a mobile application that helps farmers manage their agricultural activities efficiently, from crop planning to harvest tracking, all in one place.",
       image: "/jogfarm.webp",
-      isFeatured: true,
+      isFeatured: false,
       techStack: [
         { icon: <SiFlutter className="text-blue-500" />, name: "Flutter" },
         { icon: <SiFirebase className="text-blue-500" />, name: "Firebase" },
       ],
       links: [
-      { label: "Play Store", url: "https://play.google.com/store/apps/details?id=com.jogfarm.jogfarmv1&pcampaignid=web_share" },
-    ],
+        {
+          label: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.jogfarm.jogfarmv1&pcampaignid=web_share",
+        },
+      ],
+    },
+    {
+      title: "Ecommerce Website",
+      description:
+        "Ecommerce Website adalah platform toko online modern yang dibangun menggunakan Next.js, TypeScript, dan TailwindCSS. Website ini menawarkan pengalaman belanja yang cepat, responsif, dan mudah digunakan, serta menampilkan desain yang clean dan profesional.",
+      image: "/Ecoomerce-webdev.png",
+      isFeatured: false,
+      techStack: [
+        { icon: <SiNextdotjs className="text-white" />, name: "Next.js" },
+        {
+          icon: <SiTypescript className="text-blue-400" />,
+          name: "TypeScript",
+        },
+        {
+          icon: <SiTailwindcss className="text-blue-400" />,
+          name: "TailwindCSS",
+        },
+      ],
+      links: [
+        {
+          label: "live demo",
+          url: "https://play.google.com/store/apps/details?id=com.jogfarm.jogfarmv1&pcampaignid=web_share",
+        },
+      ],
+    },
+    {
+      title: "Company Profile - Ancatama Citra Abadi",
+      description:
+        "Company Profile - Ancatama Citra Abadi adalah platform yang dirancang untuk memberikan informasi lengkap tentang perusahaan, termasuk layanan, portofolio, dan kontak. Website ini dibangun menggunakan Next.js, TypeScript, dan TailwindCSS.",
+      image: "/ancatamacitraabadi.png",
+      isFeatured: false,
+      techStack: [
+        { icon: <SiPhp className="text-white" />, name: "PHP" },
+        { icon: <SiMysql className="text-white" />, name: "MySQL" },
+      ],
+      links: [{ label: "live demo", url: "https://ancatamacitraabadi.co.id" }],
+    },
+    {
+      title: "SEWALUX - Sewa Barang Elektronik",
+      description:
+        "SEWALUX adalah website penyewaan barang elektronik yang memudahkan pengguna untuk mencari, memesan, dan mengelola kebutuhan sewa elektronik secara online. Dibangun menggunakan Laravel 11, Filament, dan MySQL, platform ini menawarkan pengalaman pengguna yang modern, aman, dan efisien.",
+      image: "/sewalux.webp",
+      isFeatured: false,
+      techStack: [
+        { icon: <SiPhp className="text-white" />, name: "Laravel 11" },
+        { icon: <SiPhp className="text-white" />, name: "Filament" },
+        { icon: <SiMysql className="text-white" />, name: "MySQL" },
+      ],
+      links: [],
+    },
+    {
+      title: "SEWA HOTEL - Sewa Kamar Hotel Online",
+      description:
+        "SEWA HOTEL adalah website penyewaan kamar hotel yang memudahkan pengguna untuk mencari, memesan, dan mengelola kebutuhan akomodasi secara online. Platform ini dibangun menggunakan Laravel 11, Filament, dan MySQL, sehingga menawarkan pengalaman pemesanan hotel yang modern, aman, dan efisien.",
+      image: "/booking-hotel.webp",
+      isFeatured: false,
+      techStack: [
+        { icon: <SiPhp className="text-white" />, name: "Laravel 11" },
+        { icon: <SiPhp className="text-white" />, name: "Filament" },
+        { icon: <SiMysql className="text-white" />, name: "MySQL" },
+      ],
+      links: [],
     },
   ];
 

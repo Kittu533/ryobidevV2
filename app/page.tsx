@@ -28,20 +28,19 @@ export default function Home() {
 
             <div className="rounded-lg  border bg-card text-card-foreground shadow-sm">
               <div className="p-6">
-                <ServiceCard
-                  title="Services"
-                  description="My services are tailored to your needs and budget"
-                  icon={<GrServices color="#E96604" size={32} />}
-                />
-              </div>
-            </div>
-
-            <div className="rounded-lg  border bg-card text-card-foreground shadow-sm">
-              <div className="p-6">
                 <ProjectCard
                   title="Recent Projects"
                   description="Here are some of the projects I have worked on"
                   icon={<FaDiagramProject color="#E96604" size={32} />}
+                />
+              </div>
+            </div>
+            <div className="rounded-lg  border bg-card text-card-foreground shadow-sm">
+              <div className="p-6">
+                <ServiceCard
+                  title="Services"
+                  description="My services are tailored to your needs and budget"
+                  icon={<GrServices color="#E96604" size={32} />}
                 />
               </div>
             </div>
@@ -60,7 +59,7 @@ export default function Home() {
             <div className="rounded-lg  flex justify-around text-center items-center  gap-4  text-card-foreground shadow-sm">
               <div className="h-[150px] flex gap-4 justify-around  w-full rounded-sm">
                 <AchievementCard
-                  value={10}
+                  value={7}
                   label="Projects"
                   icon={<FaRegEdit size={24} />}
                 />
@@ -70,7 +69,7 @@ export default function Home() {
                   icon={<FaRegEdit size={24} />}
                 />
                 <AchievementCard
-                  value={3}
+                  value={1}
                   label="Yrs Experience"
                   icon={<FaRegEdit size={24} />}
                 />
