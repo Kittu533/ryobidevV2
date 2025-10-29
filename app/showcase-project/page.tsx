@@ -17,6 +17,7 @@ import {
   SiFastapi,
   SiFlutter,
   SiPhp,
+  SiVuedotjs,
 } from "react-icons/si";
 
 export default function ShowcaseProject() {
@@ -117,6 +118,22 @@ export default function ShowcaseProject() {
         { icon: <SiPhp className="text-white" />, name: "Laravel 11" },
         { icon: <SiPhp className="text-white" />, name: "Filament" },
         { icon: <SiMysql className="text-white" />, name: "MySQL" },
+      ],
+      links: [],
+    },
+    {
+      title: "SimplePOS - Point of Sale System",
+      description:
+        "SimplePOS adalah aplikasi Point of Sale (POS) modern yang memudahkan pengelolaan transaksi penjualan, inventori, dan laporan keuangan secara real-time. Dibangun dengan Vue 3, Pinia untuk state management, TailwindCSS untuk UI yang responsif, dan terintegrasi dengan REST API untuk sinkronisasi data yang cepat dan aman.",
+      image: "/simple-pos-vue3.png",
+      isFeatured: false,
+      techStack: [
+        { icon: <SiVuedotjs className="text-green-500" />, name: "Vue 3" },
+        { icon: <SiVuedotjs className="text-green-400" />, name: "Pinia" },
+        {
+          icon: <SiTailwindcss className="text-blue-400" />,
+          name: "TailwindCSS",
+        }
       ],
       links: [],
     },
